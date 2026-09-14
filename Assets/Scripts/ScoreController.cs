@@ -27,10 +27,10 @@ public class ScoreController : MonoBehaviour
         score++;
         UpdateScoreText();
     }
-    
+
     void UpdateScoreText()
     {
-        if(scoreText != null)
+        if (scoreText != null)
         {
             scoreText.text = "Apples caught = " + score;
         }

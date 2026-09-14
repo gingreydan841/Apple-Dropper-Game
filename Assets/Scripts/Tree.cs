@@ -12,25 +12,25 @@ public class Tree : MonoBehaviour
     public float dropIntervalMax = 2.5f;
     public Transform dropPoint;
 
-    
+
     void Start()
     {
         ScheduleNextDrop();
     }
 
-    
+
     void Update()
     {
         if (isFacingRight)
         {
             // move right
-            transform.position = new Vector2(transform.position.x + (speed*Time.deltaTime),
+            transform.position = new Vector2(transform.position.x + (speed * Time.deltaTime),
                 transform.position.y);
         }
         else
         {
             // move left
-            transform.position = new Vector2(transform.position.x - (speed*Time.deltaTime),
+            transform.position = new Vector2(transform.position.x - (speed * Time.deltaTime),
                 transform.position.y);
         }
         if (transform.position.x > rightBound.transform.position.x)
